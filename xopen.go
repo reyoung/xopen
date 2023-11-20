@@ -12,7 +12,7 @@ import (
 )
 
 var (
-	pattern = regexp.MustCompile(`^.*(\.zst|\.xz|\.gz|\.bz2|)$`)
+	pattern = regexp.MustCompile(`^.*(\.zst|\.xz|\.gz|\.bz2)$`)
 )
 
 type readerCloser struct {
