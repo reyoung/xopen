@@ -33,7 +33,7 @@ func (r *readerCloser) Close() error {
 }
 
 func openZSTD(filename string) (io.ReadCloser, error) {
-	f, err := Open(filename)
+	f, err := os.Open(filename)
 	if err != nil {
 		return nil, err
 	}
@@ -53,7 +53,7 @@ func openZSTD(filename string) (io.ReadCloser, error) {
 
 }
 func openXZ(filename string) (io.ReadCloser, error) {
-	f, err := Open(filename)
+	f, err := os.Open(filename)
 	if err != nil {
 		return nil, err
 	}
@@ -69,7 +69,7 @@ func openXZ(filename string) (io.ReadCloser, error) {
 }
 
 func openGZ(filename string) (io.ReadCloser, error) {
-	f, err := Open(filename)
+	f, err := os.Open(filename)
 	if err != nil {
 		return nil, err
 	}
@@ -85,7 +85,7 @@ func openGZ(filename string) (io.ReadCloser, error) {
 }
 
 func openBZ2(filename string) (io.ReadCloser, error) {
-	f, err := Open(filename)
+	f, err := os.Open(filename)
 	if err != nil {
 		return nil, err
 	}
