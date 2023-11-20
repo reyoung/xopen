@@ -1,4 +1,4 @@
-module xopen
+module github.com/reyoung/xopen
 
 go 1.20
 
